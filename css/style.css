@@ -2,5 +2,28 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+   
 }
 
+body{
+    background-color: rgba(128, 128, 128, 0.089);
+}
+
+/* InputFleldEmpty */
+.emptyText{
+    display: none;
+    text-align: center;
+    color: red;
+}
+
+
+/* errorHandling */
+.errorText{
+    display: none;
+}
+
+/* cardItems */
+.carditem:hover{
+    cursor: pointer;
+    background-color: rgba(8, 197, 255, 0.205);
+}

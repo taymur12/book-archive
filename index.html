@@ -25,11 +25,11 @@
     <main>
         <!-- Navigation Section -->
         <header>
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-light bg-light p-3">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html">
                     <img src="images/read.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    Open Library
+                   <span class="fw-bold text-dark">Open Library</span>
                   </a>
                 </div>
               </nav>
@@ -43,11 +43,22 @@
             </div>
         </section>
 
-        <!-- Search Result section -->
-        <section>
+            <!-- Search Result section -->
+            <section class="container-fluid">
+            <div>
+                <p id="empty" class="emptyText">Please Write Any Book Name</p>
+            </div>
+
+            <!-- Error Handling -->
+            <p id="errordiv" class="errorText text-center text-danger">No Result Found</p>
+
+            <!-- Total result found -->
+            <div id="total" class="mb-5">
+            </div>
+
+            <!-- Card section -->
             <div class="row row-cols-1 row-cols-md-3 g-4" id="container-id">
-                
-              </div>
+            </div>
         </section>
     </main>
 
