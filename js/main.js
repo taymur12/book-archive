@@ -20,15 +20,15 @@ const btnSearch = () => {
     }
 }
 
-    // Show display search result
-    const displaySearch = result => {
+// Show display search result
+const displaySearch = result => {
     const containerid = document.getElementById('container-id')
-    
+
     // Error Handling
-    if(!result.length){
-        errordiv.style.display = 'block'  
+    if (!result.length) {
+        errordiv.style.display = 'block'
     }
-    else{
+    else {
         errordiv.style.display = 'none'
     }
 
@@ -41,7 +41,7 @@ const btnSearch = () => {
 
     // loop 
     result.forEach(results => {
-        
+
         const div = document.createElement('div')
         div.classList.add('col')
         div.innerHTML = `<div class="card mb-3 h-100 p-2 carditem" style="max-width: 540px;">
