@@ -1,3 +1,14 @@
+// added keyboard enter button
+const inputFieldEnter = document.getElementById('input-field')
+const searchFieldEnter = document.getElementById('btn')
+document.addEventListener('keypress', function(event){
+  if(event.key === 'Enter'){
+    searchFieldEnter.click()
+  }
+})
+
+
+
 const errordiv = document.getElementById('errordiv')
 //Loader 
 const btnSearch = () => {
