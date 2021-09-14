@@ -64,7 +64,7 @@ const displaySearch = result => {
             <div class="card-body">
               <h5 class="card-title">Title: <span class="fw-bold">${results.title}</span></h5>
               <p class="card-text">Author: <span class="fw-bold">${results.author_name}</span></p>
-              <p class="card-text"><small>Publisher: ${results.publisher}</small></p>
+              <p class="card-text"><small>Publisher: ${results.publisher[0]}</small></p>
               <p class="card-text"><small>First Published Year: ${results.first_publish_year}</small></p>
               
             </div>
